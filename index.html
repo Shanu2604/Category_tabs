@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category tabs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="heading">
+      <h2>SELECT YOUR CHOICE</h2>
+    </div>
+    <div class="tabs">
+      <button class="tab-button active" data-category="Men">
+        <i class="fa fa-male" aria-hidden="true"></i>Men
+      </button>
+      <button class="tab-button" data-category="Women">
+        <i class="fa fa-female" aria-hidden="true"></i>Women
+      </button>
+      <button class="tab-button" data-category="Kids">
+        <i class="fa fa-child" aria-hidden="true"></i>Kids
+      </button>
+    </div>
+    <div id="product-container"></div>
+  </body>
+</html>

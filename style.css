@@ -1,0 +1,126 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  text-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.tabs button {
+  background-color: #e0dfdf;
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  border: none;
+}
+.tabs button.active {
+  background-color: #0b0909;
+  color: white;
+}
+.fa {
+  margin-right: 10px;
+}
+.tabs button .fa {
+  display: none;
+}
+.tabs button.active .fa {
+  display: inline-block;
+}
+#product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-card {
+  margin: 0px 10px;
+  width: 320px;
+  height: 520px;
+  float: left;
+  text-align: left;
+}
+.product-card img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+.badge {
+  background-color: #fff;
+  width: 150px;
+  color: #060606;
+  padding: 5px;
+  position: relative;
+  top: 38px;
+  left: 10px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 4px;
+}
+.title {
+  display: flex;
+}
+.product-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.price {
+  display: flex;
+}
+.product-vendor,
+.product-price,
+.product-discount {
+  margin-top: 10px;
+  width: 95px;
+}
+.product-compare-at-price {
+  width: 75px;
+  margin-top: 10px;
+  text-decoration: line-through;
+  color: #767575;
+}
+.product-discount {
+  color: #fa0a0a;
+  font-weight: 600;
+}
+.add-to-cart {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    width: calc(50% - 20px);
+  }
+}
